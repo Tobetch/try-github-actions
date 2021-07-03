@@ -17,3 +17,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Setup Java JDK
         uses: actions/setup-java@v2.1.0
+        with:
+          distribution: 'adopt' # See 'Supported distributions' for available options
+          java-version: '11'
